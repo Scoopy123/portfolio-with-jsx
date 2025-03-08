@@ -1,0 +1,66 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/pic.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background covers the full page */
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Moves content to the bottom */
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Adds slight transparency */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px; /* Keeps it above the bottom edge */
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Animated Button */
+.glow-on-hover {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg, #ff8c00, #ff2e63);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 46, 99, 0.4);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.glow-on-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(255, 46, 99, 0.7);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
